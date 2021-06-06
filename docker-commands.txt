@@ -1,0 +1,59 @@
+# run
+## Over-ride start-up command
+docker run <image> <over-ride command>
+## Start container with a interactive shell
+docker run -it <image> <over-ride command>
+## Port mapping
+docker run -p <host-port>:<container-port> <image>
+## Detached container start-up
+docker run -d <image>
+
+# create
+## Create container
+docker create <image>
+
+# start
+## Start container with streamed output
+docker start -a <container-id>
+## Start container without streamed output
+docker start <container-id>
+
+# exec
+## execute a command on a running container
+docker exec -it <container-id> <command>
+
+# ps
+## Inspect all the running docker containers
+docker ps
+## Inspect all the docker containers
+docker ps --all
+
+# stop
+## Stop a container with some clean-up grace
+docker stop <container-id>
+
+# kill
+## Stop a container immediately
+docker kill <container-id>
+
+# rm
+## Remove a container
+docker rm <container-id>
+
+# system
+## Clean stopped containers
+docker system prune
+
+# build
+## Build images from Dockerfile
+docker build .
+## Build image from Dockerfile with a tag
+docker build -t <username>/<repo-name>:<version> .
+
+# commit
+## Form a image from container snap-shot
+docker commit -c <start-up command> <container-id>
+
+# docker-compose
+docker-compose up
+docker-compose up --build
