@@ -1,0 +1,5 @@
+version: '3'
+services:
+    my-react-app;
+        build:
+            - file: 

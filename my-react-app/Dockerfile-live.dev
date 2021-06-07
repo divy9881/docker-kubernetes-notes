@@ -1,0 +1,8 @@
+FROM node:alpine
+
+WORKDIR /apps/my-react-app
+
+COPY package.json .
+RUN npm install
+
+CMD npm start

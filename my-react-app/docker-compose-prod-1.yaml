@@ -1,0 +1,8 @@
+version: '3'
+services:
+    nginx:
+        image: 'nginx:stable'
+        ports:
+            - '3000:80'
+        volumes:
+            - ./build:/usr/share/nginx/html
