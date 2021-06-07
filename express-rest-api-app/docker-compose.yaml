@@ -1,0 +1,6 @@
+version: '3'
+services:
+    express-rest-api-app:
+        build: .
+        ports:
+            - 2000:3000
