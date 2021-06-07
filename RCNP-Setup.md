@@ -37,5 +37,14 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 reboot
 ```
 
+- **RAM requirement warning**\
+While creating a VM on Robin cluster VMaaS, provision for memory greater than 8 GB. This will fix the warning of minimum memory requirement.
+
+- **Convention problem**\
+**rpool** and **ip-pool** have different naming conventions 
+
+- **Bundle creation documentation**\
+The bundle creation [doc](https://docs.robin.io/bundle_guide/latest/bundle-building.html#constructing-an-application-bundle) has a mistake in `robin bundle add` API call
+
 
 
